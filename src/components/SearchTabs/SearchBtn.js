@@ -2,19 +2,20 @@ import { useState } from "react";
 import '../SearchTabs/searchBtn.css'
 
 export default function SearchBtn() {
-  const [text, setText] = useState("");
+  const [cinemaName, setCinemaName] = useState("");
+  const [movie, setMovie] =useState ('')
 
   return (
     <>
       <div className="container">
         <div>
-          <form className="form-inline">
+          <form className="form-inline Cinema Name">
             <input
               type="text"
-              value={text}
+              value={cinemaName}
               placeholder="Cinema Name"
               aria-label="Search"
-              onChange={(e) => setText(e.target.value)}
+              onChange={(e) => setCinemaName(e.target.value)}
             />
             <button
               className="btn btn-outline-success my-2 my-sm-0"
@@ -27,14 +28,14 @@ export default function SearchBtn() {
           
         </div>
         <div>
-          <form className="form-inline">
+          <form className="form-inline Movie Name">
             <input
               className="form-control mr-sm-2"
               type="text"
-              value={text}
+              value={movie}
               placeholder="Movie Name"
               aria-label="Search"
-              onChange={(e) => setText(e.target.value)}
+              onChange={(e) => setMovie(e.target.value)}
             />
             <button
               className="btn btn-outline-success my-2 my-sm-0"
