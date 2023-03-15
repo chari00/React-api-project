@@ -10,7 +10,6 @@ body{
 }
 .navbar-container,
 .nav-item, 
-.nav-link, 
 .navbar-nav{
     background-color: rgb(48, 45, 45);
 
@@ -20,7 +19,7 @@ body{
     margin: 20px;
     list-style: none;
 }
-.nav-link, .navbar-nav{
+.navbar-nav{
     font-size: 15px;
     color: rgb(240, 235, 235)
 }
