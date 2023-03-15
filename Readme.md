@@ -1,4 +1,59 @@
-## Project REact with API 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# **Project REact with API**
+
+  ## Table of Content 
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Links](#Links)
+- [Questions](#Questions)
+
+## Description
+This project was created mainly with React.js framework. The 
+App help the user to easily locate nearby Cinemas. 
+
+## Installation 
+1. The software package needed to install are [React](https://reactjs.org/docs/getting-started.html), [React Router DOM](https://www.npmjs.com/package/react-router-dom), and [Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/).
+2. In the command line type `npx create-react-app my-app` to install _`React`_.
+3. After react installation, open the README.md file to find the details start the program.
+4. Install _`React Router DOM`_ by entering `npm i react-router-dom` in the command line,
+5. and `npm install bootstrap` to install _`Bootstrap`_.
+6. Then add `import 'bootstrap/dist/css/bootstrap.min.css';` to the `index.js` file.
+
+## Usage
+This is the [DEMO-VIDEO]() showing how the application works.
+
+## License
+This project is covered by MIT.
+
+## Contributing
+Please see guidelines for contributing to this repository.
+
+## Links
+
+#### Resources 
+- https://developer.movieglu.com/api-index/cinemasnearby/ 
+
+- https://www.npmjs.com/package/movie-info 
+
+- https://penpot.app/ 
 
 
-### Initial ideas
+#### Source code location
+
+- https://github.com/GeorgeGio/React-api-project 
+
+#### Deployed website URL
+
+- 
+
+## Questions
+For questions and comments please contact the following details:
+
+E-mail: macharitocruzuk@gmail.com
+
+GitHub user Id: https://github.com/chari00
+  
