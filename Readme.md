@@ -53,9 +53,11 @@ Please see guidelines for contributing to this repository.
 ## Questions
 For questions and comments please contact the following details:
 
-E-mail: macharitocruzuk@gmail.com
-        csaba0613@gmail.com
+E-mail(s): <br>
+macharitocruzuk@gmail.com <br>
+ csaba0613@gmail.com
 
-GitHub user Id: https://github.com/chari00
-                https://github.com/CIMSGit
+GitHub user Id(s):<br>
+ https://github.com/chari00 <br>
+https://github.com/CIMSGit
   
