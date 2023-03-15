@@ -17,7 +17,7 @@ App help the user to easily locate nearby Cinemas.
 
 ## Installation 
 1. The software package needed to install are [React](https://reactjs.org/docs/getting-started.html), [React Router DOM](https://www.npmjs.com/package/react-router-dom), and [Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/).
-2. In the command line type `npx create-react-app my-app` to install _`React`_.
+2. In the command line type `npm i react-scripts` to install _`Scripts`_.
 3. After react installation, open the README.md file to find the details start the program.
 4. Install _`React Router DOM`_ by entering `npm i react-router-dom` in the command line,
 5. and `npm install bootstrap` to install _`Bootstrap`_.
@@ -54,6 +54,8 @@ Please see guidelines for contributing to this repository.
 For questions and comments please contact the following details:
 
 E-mail: macharitocruzuk@gmail.com
+        csaba0613@gmail.com
 
 GitHub user Id: https://github.com/chari00
+                https://github.com/CIMSGit
   
