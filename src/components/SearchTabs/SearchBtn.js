@@ -1,6 +1,6 @@
 import { useState } from "react";
 import '../SearchTabs/searchBtn.css'
-
+import initMap from "../MapTab/Map-search";
 export default function SearchBtn() {
   const [cinemaName, setCinemaName] = useState("");
   const [movie, setMovie] =useState ('')
@@ -10,7 +10,7 @@ export default function SearchBtn() {
       <div className="container">
         <div>
           <form className="form-inline Cinema Name">
-            <input
+            <input id="map"
               type="text"
               value={cinemaName}
               placeholder="Cinema Name"
