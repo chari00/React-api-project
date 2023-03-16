@@ -3,7 +3,7 @@ import SearchBtn from './components/SearchTabs/SearchBtn';
 import Navbar from './components/NavTab/Navbar';
 import {useLoadScript} from '@react-google-maps/api';
 import Map from './components/MapTab/Map'
-
+import MyComponent from './components/MapTab/Map-search';
 function App() {
   const {isLoaded} = useLoadScript({googleMapsApiKey:'AIzaSyDiynoeYUWuZBp_4e29FZ4-JXPJHVz9olY', Libraries: ['places']})
   if (!isLoaded) {
@@ -13,6 +13,7 @@ function App() {
     <div>
      <Navbar/>
      <SearchBtn/>
+     <MyComponent/>
      <div>
       <div id='map'><Map/></div>
       

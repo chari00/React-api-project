@@ -7,7 +7,7 @@ import '../MapTab/map.css'
 
 export default function Map() {
   const center = useMemo(() => ({ lat: 51, lng: 0 }), []);
-  
+ 
   return (
     <div className="container">
       <div className="controls">
