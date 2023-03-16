@@ -1,10 +1,19 @@
 import { useState } from "react";
 import '../SearchTabs/searchBtn.css'
 import initMap from "../MapTab/Map-search";
-export default function SearchBtn() {
+
+export default function SearchBtn({setLocation}) {
+
   const [cinemaName, setCinemaName] = useState("");
   const [movie, setMovie] =useState ('')
 
+  function handleSubmit(e) {
+    e.preventDefault()
+    console.log(cinemaName);
+    setLocation(cinemaName)
+
+    
+  }
   return (
     <>
       <div className="container">
@@ -20,7 +29,7 @@ export default function SearchBtn() {
             <button
               className="btn btn-outline-success my-2 my-sm-0"
               type="submit"
-              onClick={() => {}}
+              onClick={(e) => handleSubmit(e)}
             >
               Locate Cinema
             </button>
@@ -40,7 +49,7 @@ export default function SearchBtn() {
             <button
               className="btn btn-outline-success my-2 my-sm-0"
               type="submit"
-              onClick={() => {}}
+              onClick={(e) => {}}
             >
               Search Movie
             </button>

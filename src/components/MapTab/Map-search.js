@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import SearchBtn from '../SearchTabs/SearchBtn';
 
 const containerStyle = {
   width: '400px',
@@ -11,7 +12,7 @@ const center = {
   lng: -0.118092
 };
 
-function MyComponent() {
+function MyComponent({location}) {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyAZRcYKLV62ZfdF-kad90u8lmuvdIwYxu8"
@@ -32,6 +33,7 @@ function MyComponent() {
   }, [])
 
   return isLoaded ? (
+      <div>{console.log(location)}
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
@@ -42,6 +44,7 @@ function MyComponent() {
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
+      </div>
   ) : <></>
 }
 
