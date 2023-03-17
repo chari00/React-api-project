@@ -1,6 +1,6 @@
 import { useState } from "react";
 import '../SearchTabs/searchBtn.css'
-import initMap from "../MapTab/Map-search";
+import initMap from "../MapTab/MapSearch";
 
 export default function SearchBtn({setLocation}) {
 
