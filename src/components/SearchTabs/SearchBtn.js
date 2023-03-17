@@ -9,7 +9,12 @@ export default function SearchBtn({ setLocation }) {
     e.preventDefault();
     console.log(cinemaName);
     setLocation(cinemaName);
+    setMovie(movie);
+    console.log(movie);
+
+
   }
+  
   return (
     <>
       <div className="container">
@@ -45,7 +50,7 @@ export default function SearchBtn({ setLocation }) {
             <button
               className="btn btn-outline-success my-2 my-sm-0"
               type="submit"
-              onClick={(e) => {}}
+              onClick={(e) => handleSubmit(e)}
             >
               Search 
             </button>
