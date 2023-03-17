@@ -1,10 +1,12 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import SearchBtn from '../SearchTabs/SearchBtn';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  width: '80%',
+  height: '350px',
+  marginTop:'30px',
+  marginLeft:'30px'
+  
 };
 
 const center = {
@@ -12,7 +14,7 @@ const center = {
   lng: -0.118092
 };
 
-function MyComponent({location}) {
+function MapSearch() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyAZRcYKLV62ZfdF-kad90u8lmuvdIwYxu8"
@@ -33,19 +35,22 @@ function MyComponent({location}) {
   }, [])
 
   return isLoaded ? (
-      <div>{console.log(location)}
+    <div >
+      
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={8}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
         { /* Child components, such as markers, info windows, etc. */ }
-        <></>
+       
       </GoogleMap>
-      </div>
+      
+    </div>
+      
   ) : <></>
 }
 
-export default MyComponent
+export default MapSearch
