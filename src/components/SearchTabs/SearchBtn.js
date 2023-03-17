@@ -1,28 +1,25 @@
 import { useState } from "react";
-import '../SearchTabs/searchBtn.css'
-import initMap from "../MapTab/Map-search";
+import "../SearchTabs/searchBtn.css";
 
-export default function SearchBtn({setLocation}) {
-
+export default function SearchBtn({ setLocation }) {
   const [cinemaName, setCinemaName] = useState("");
-  const [movie, setMovie] =useState ('')
+  const [movie, setMovie] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
     console.log(cinemaName);
-    setLocation(cinemaName)
-
-    
+    setLocation(cinemaName);
   }
   return (
     <>
       <div className="container">
         <div>
           <form className="form-inline Cinema Name">
-            <input id="map"
+            <input
+              id="map"
               type="text"
               value={cinemaName}
-              placeholder="Cinema Name"
+              placeholder="Location Name"
               aria-label="Search"
               onChange={(e) => setCinemaName(e.target.value)}
             />
@@ -31,10 +28,9 @@ export default function SearchBtn({setLocation}) {
               type="submit"
               onClick={(e) => handleSubmit(e)}
             >
-              Locate Cinema
+              Search
             </button>
           </form>
-          
         </div>
         <div>
           <form className="form-inline Movie Name">
@@ -51,7 +47,7 @@ export default function SearchBtn({setLocation}) {
               type="submit"
               onClick={(e) => {}}
             >
-              Search Movie
+              Search 
             </button>
           </form>
         </div>
