@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../SearchTabs/searchBtn.css";
+import '../SearchTabs/searchBtn.css'
 
 export default function SearchBtn({ setLocation }) {
   const [cinemaName, setCinemaName] = useState("");
