@@ -37,16 +37,7 @@ function MapSearch() {
   return isLoaded ? (
     <div >
       
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={8}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-       
-      </GoogleMap>
+     
       
     </div>
       

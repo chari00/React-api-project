@@ -1,38 +1,92 @@
-.App {
+
+.myClass{
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 25px;
+color: black;
+font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+text-align: center;
+}
+.btn.btn-primary.loc {
+  display:flex;
+   justify-content: center;
+}
+
+.myClass2{
+  color: black;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 75px;
+  margin-bottom: 50px;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.search.btn.btn-primary.text-uppercase{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+justify-content: center; 
+padding: 10px;
+ color: black;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 75px;
+  margin-bottom: 50px;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.renderedMovie{
+  display: flex;
+  justify-content: center; 
+  background-color:#F6F1F1;
+
+padding:  10px;
+   color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.searchInfoX {
+  display: flex;
+  flex-wrap:nowrap;
+  list-style: none;
+  margin: 0px;
+  padding: 5px;
+}
+img {
+  height: 390px;
+  width: 270px;
+}
+
+
+.searchInfoX li {
+  flex: 0 0 calc(10% - 50px); /* adjust the percentage as needed */
+  margin: 5px;
+}
+img.logo{
+  height: 240px;
+  width: 200px;
+}
+
+
+
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
 }
