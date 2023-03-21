@@ -3,9 +3,7 @@ import SearchBtn from './components/SearchTabs/SearchBtn';
 import MapSearch from './components/MapTab/MapSearch';
 import Navbar from './components/NavTab/Navbar';
 import {useLoadScript} from '@react-google-maps/api';
-import Map from './components/MapTab/Map'
-import MyComponent from './components/MapTab/MapSearch';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
@@ -46,13 +44,8 @@ function App() {
     <div>
      <Navbar/>
      <SearchBtn setLocation={setLocation}/>
-     <MyComponent location={location}/>
-     {/* <FetchLocation location={location}/> */}
+     <MapSearch location={location}/>
      <div>
-      {/* <div id='map'><Map /></div> */}
-      <div>
-        {location}
-      </div>
       
 
     </div>
