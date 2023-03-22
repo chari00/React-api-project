@@ -39,7 +39,7 @@ App help the user to find movie information and to easily locate nearby Cinemas 
 - **CSS** is a computer language for laying out and structuring web pages.
 
 ## Usage
-Click [DEMO-VIDEO]() to see how to use the app.
+Click [DEMO VIDEO](https://user-images.githubusercontent.com/116744496/227040376-359a23cc-7280-4857-a70d-e9a1bcbb825f.mp4) to see how to use the app.
 
 ## Visual
 #### Image of the App when finding the closest Cinema.
@@ -78,7 +78,7 @@ This project is covered by _MIT._
 
 #### Source code location
 
-- https://github.com/GeorgeGio/React-api-project 
+- https://github.com/GeorgeGio/Movie-Cinema-Finder 
 
 #### Deployed website URL - Netlifly
 
