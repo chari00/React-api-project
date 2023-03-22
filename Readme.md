@@ -20,7 +20,7 @@ App help the user to easily locate nearby Cinemas.
 - [React](https://reactjs.org/docs/getting-started.html), 
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom), 
 - [Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/), 
-- [Moment.js](https://www.npmjs.com/package/moment),
+- [MomentJS](https://www.npmjs.com/package/moment),
 - [Movie-info](https://www.npmjs.com/package/movie-info).
 2. In the command line type `npm i react-scripts` to install _`Scripts`_.
 3. After react installation, open the README.md file to find the details to start the program.
@@ -28,6 +28,15 @@ App help the user to easily locate nearby Cinemas.
 5. Enter `npm install bootstrap` in the command line to install _`Bootstrap`_, then add `import 'bootstrap/dist/css/bootstrap.min.css'` to the `index.js` file.
 6. To install _`moment.js package`_ enter `npm i moment` in the command line.
 7. To install _`Movie-info`_ enter `npm i -g movie-info` in the command line.
+
+### Build with:
+
+- **React** is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React. js is virtual DOM.
+- **MomentJS** is a JavaScript library which helps is parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way.
+- **Bootstrap** is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
+- **API** are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols.
+- **JavaScript** is a scripting or programming language that allows you to implement complex features on web pages.
+- **CSS** is a computer language for laying out and structuring web pages.
 
 ## Usage
 Click [DEMO-VIDEO]() to see how to use the app.
