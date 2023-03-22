@@ -52,13 +52,7 @@ export default function GeoLoc() {
     FetchLocation()
   }, [locationName])
 
-  // client:	BOOT_5
-  // x-api-key:	l6k9ke23Cyzrl6p38OP3a9vUPQyFmT032fbgx7Kf
-  // authorization:	Basic Qk9PVF81OmdFb2h6SkdqM3NwSg==
-  // territory:	UK
-  // api-version:	v200
-  // geolocation:	Your location in format lat;lng, e.g. 52.47;-1.93
-  // device-datetime:	yyyy-mm-ddThh:mm:ss.sssZ (ISO 8601 format, e.g. 2018-09-14T08:30:17.360Z)
+
   useEffect(() => {
     const fetchCinemasLocal = async () => {
       setIsLoading(true);
@@ -66,9 +60,9 @@ export default function GeoLoc() {
         const response = await fetch(`https://api-gate2.movieglu.com/cinemasNearby/?n=1`, {
           method: 'GET',
           headers: {
-            'client': 'NONE_103',
-            'x-api-key': 'l6k9ke23Cyzrl6p38OP3a9vUPQyFmT032fbgx7Kf',
-            'authorization': 'Basic Qk9PVF81OmdFb2h6SkdqM3NwSg==',
+            'client': 'PERS_147',
+            'x-api-key': 'P5JP3ZfneC4llxXXvjLuY7mtwjtEpBf89nfXVdar',
+            'authorization': 'Basic UEVSU18xNDc6QmtTUjlLRG1KR0hI',
             'territory': 'UK',
             'api-version': 'v200',
             'geolocation': latitude + ';' + longitude,
@@ -91,13 +85,7 @@ export default function GeoLoc() {
 
 
 
-  // client:	BOOT_5
-  // x-api-key:	l6k9ke23Cyzrl6p38OP3a9vUPQyFmT032fbgx7Kf
-  // authorization:	Basic Qk9PVF81OmdFb2h6SkdqM3NwSg==
-  // territory:	UK
-  // api-version:	v200
-  // geolocation:	Your location in format lat;lng, e.g. 52.47;-1.93
-  // device-datetime:	yyyy-mm-ddThh:mm:ss.sssZ (ISO 8601 format, e.g. 2018-09-14T08:30:17.360Z)
+
   useEffect(() => {
     const fetchCinemasSearch = async () => {
       setIsLoading2(true);
@@ -105,9 +93,9 @@ export default function GeoLoc() {
         const response = await fetch(`https://api-gate2.movieglu.com/cinemasNearby/?n=1`, {
           method: 'GET',
           headers: {
-            'client': 'NONE_103',
-            'x-api-key': 'l6k9ke23Cyzrl6p38OP3a9vUPQyFmT032fbgx7Kf',
-            'authorization': 'Basic Qk9PVF81OmdFb2h6SkdqM3NwSg==',
+            'client': 'PERS_147',
+            'x-api-key': 'P5JP3ZfneC4llxXXvjLuY7mtwjtEpBf89nfXVdar',
+            'authorization': 'Basic UEVSU18xNDc6QmtTUjlLRG1KR0hI',
             'territory': 'UK',
             'api-version': 'v200',
             'geolocation': lat + ';' + long,
@@ -178,15 +166,14 @@ export default function GeoLoc() {
         <div className='renderedCinema'>
 
           {isLoading2 ? (
-            <p>Loading cinemas... at {long} </p>
+            <p>Loading cinemas... {long} </p>
           ) : (
             <div>
               {cinemas2.length > 0 ? (
                 <ul>
                   {cinemas2.map((cinema) => (
                     <li key={cinema.cinema_id}>
-                      <p>Latitude: {lat}</p>
-                      <p>Longitude: {long}</p>
+
                       <h3>{cinema.cinema_name}</h3>
                       <p>Address: {cinema.address}</p>
                       <p>Distance: {cinema.distance}</p>
@@ -195,7 +182,7 @@ export default function GeoLoc() {
                   ))}
                 </ul>
               ) : (
-                <p>No cinemas found close to {lat}
+                <p>Please enter your location.
                 </p>
               )}
 
@@ -217,15 +204,14 @@ export default function GeoLoc() {
       </a></div>
       <div className='renderedCinema'>
         {isLoading ? (
-          <p>Loading cinemas... at {longitude} </p>
+          <p>Loading cinemas {longitude} </p>
         ) : (
           <div>
             {cinemas.length > 0 ? (
               <ul>
                 {cinemas.map((cinema) => (
                   <li key={cinema.cinema_id}>
-                    <p>Latitude: {latitude}</p>
-                    <p>Longitude: {longitude}</p>
+
                     <h3>{cinema.cinema_name}</h3>
                     <p>Address: {cinema.address}</p>
                     <p>Distance: {cinema.distance}</p>
@@ -234,7 +220,7 @@ export default function GeoLoc() {
                 ))}
               </ul>
             ) : (
-              <p>No cinemas found close to {longitude}
+              <p>Please click to find your closest cinema. {longitude}
               </p>
             )}
 
