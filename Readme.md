@@ -24,16 +24,20 @@ App help the user to easily locate nearby Cinemas.
 - [Movie-info](https://www.npmjs.com/package/movie-info).
 2. In the command line type `npm i react-scripts` to install _`Scripts`_.
 3. After react installation, open the README.md file to find the details to start the program.
-4. Install _`React Router DOM`_ by entering `npm i react-router-dom` in the command line
+4. Install _`React Router DOM`_ by entering `npm i react-router-dom` in the command line.
 5. Enter `npm install bootstrap` in the command line to install _`Bootstrap`_, then add `import 'bootstrap/dist/css/bootstrap.min.css'` to the `index.js` file.
-6. To install _`moment.js package`_ type `npm i moment` in the command line.
-7. To install _`Movie-info`_ type `npm i movie-info` in the command line,
+6. To install _`moment.js package`_ enter `npm i moment` in the command line.
+7. To install _`Movie-info`_ enter `npm i -g movie-info` in the command line.
 
 ## Usage
 Click [DEMO-VIDEO]() to see how to use the app.
 
 ## Visual
-Please see guidelines for contributing to this repository.
+#### Image of the App when finding the closest Cinema.
+![Nearby-Cinema](public/assets/img/nearbyCinema.png)
+
+#### Image of the App displaying poster in search history view.
+![Search-history](public/assets/img/searchHistoryPoster.png)
 
 ## License
 This project is covered by MIT.
@@ -43,6 +47,10 @@ This project is covered by MIT.
 #### Resource 
 
 - https://developer.movieglu.com/api-index/cinemasnearby/ 
+
+- https://www.imdb.com/?ref_=nv_home 
+
+- https://openweathermap.org/api 
 
 - https://www.npmjs.com/package/movie-info 
 
