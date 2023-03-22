@@ -80,7 +80,7 @@ This project is covered by MIT.
 
 #### Deployed website URL - Netlifly
 
-- 
+- https://cinema-finder.netlify.app/ 
 
 ## Questions
 For questions and comments please contact the following details:
