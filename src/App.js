@@ -59,10 +59,14 @@ function App(props) {
 
       {movie && (
         <div>
-          <h2>{movie.Title}</h2>
+
           <div className="renderedMovie">
             <div><img src={movie.Poster} alt={movie.Title} /></div>
             <div>
+              <p>
+                <h2>{movie.Title}</h2>
+
+              </p>
               <div><p>Plot: {movie.Plot}</p></div>
               <p>Director: {movie.Director}</p>
               <p>Actors: {movie.Actors}</p>
