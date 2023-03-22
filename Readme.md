@@ -57,9 +57,11 @@ This project is covered by _MIT._
 
 - https://developer.movieglu.com/api-index/cinemasnearby/ 
 
-- https://www.imdb.com/?ref_=nv_home 
+- https://www.omdb.com/?ref_=nv_home 
 
 - https://openweathermap.org/api 
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API 
 
 - https://www.npmjs.com/package/movie-info 
 
