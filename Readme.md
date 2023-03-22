@@ -46,6 +46,11 @@ This project is covered by MIT.
 
 - https://www.npmjs.com/package/movie-info 
 
+- https://www.npmjs.com/package/moment 
+
+- https://react.dev/reference/react/useEffect 
+
+- https://react.dev/reference/react/useState 
 
 
 #### Source code location
