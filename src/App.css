@@ -77,8 +77,8 @@ button.btn.btn-primary {
 img {
   height: 390px;
   width: 270px;
-  margin-left: 125px;
-  padding: 0px;
+  margin-left: 5px;
+ 
 }
 
 
@@ -92,12 +92,6 @@ img.logo {
   height: 240px;
   width: 200px;
 }
-
-.list-inline{
-  margin: 0px;
-}
-
-
 
 dl,
 ol,
