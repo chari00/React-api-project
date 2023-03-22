@@ -40,7 +40,7 @@ This project is covered by MIT.
 
 ## Links
 
-#### Resources 
+#### Resource 
 
 - https://developer.movieglu.com/api-index/cinemasnearby/ 
 
@@ -51,6 +51,10 @@ This project is covered by MIT.
 - https://react.dev/reference/react/useEffect 
 
 - https://react.dev/reference/react/useState 
+
+- https://www.geeksforgeeks.org/react-js-usecallback-hook/ 
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
 
 
 #### Source code location
