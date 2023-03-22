@@ -34,9 +34,7 @@ button.btn.btn-primary {
 
 .search.btn.btn-primary.text-uppercase {
   background-color: rgb(114, 120, 124) !important;
-
   display: flex;
-
   justify-content: center;
   margin: 0 auto;
   padding: 10px;
@@ -46,8 +44,6 @@ button.btn.btn-primary {
   line-height: 50px;
   margin-bottom: 50px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-
 }
 
 .renderedMovie {
@@ -81,7 +77,8 @@ button.btn.btn-primary {
 img {
   height: 390px;
   width: 270px;
-  margin-left: 5px;
+  margin-left: 125px;
+  padding: 0px;
 }
 
 
@@ -96,6 +93,9 @@ img.logo {
   width: 200px;
 }
 
+.list-inline{
+  margin: 0px;
+}
 
 
 
