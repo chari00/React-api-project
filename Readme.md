@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# _**Cinema Finder App**_
+# _**Movie & Cinema Finder App**_
 
   ## Table of Content 
 - [Description](#Description)
@@ -13,7 +13,7 @@
 
 ## Description
 This project was created mainly with React.js framework. This
-App help the user to easily locate nearby Cinemas. 
+App help the user to find movie information and to easily locate nearby Cinemas and   
 
 ## Installation 
 1. The software package needed to install are the following:
@@ -29,7 +29,7 @@ App help the user to easily locate nearby Cinemas.
 6. To install _`moment.js package`_ enter `npm i moment` in the command line.
 7. To install _`Movie-info`_ enter `npm i -g movie-info` in the command line.
 
-### Build with:
+#### Build with:
 
 - **React** is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React. js is virtual DOM.
 - **MomentJS** is a JavaScript library which helps is parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way.
@@ -49,7 +49,7 @@ Click [DEMO-VIDEO]() to see how to use the app.
 ![Search-history](public/assets/img/searchHistoryPoster.png)
 
 ## License
-This project is covered by MIT.
+This project is covered by _MIT._
 
 ## Links
 
