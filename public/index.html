@@ -28,23 +28,26 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top"">Movie & Cinema Finder</a><button
-            data-bs-toggle=" collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
-                type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
-                    class="fa fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto text-uppercase">
-                        <li class="nav-item"></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#searchAgain">Search Again</a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="newrelease.html">New-releases</a></li>
-                    </ul>
-                </div>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Movie & Cinema Finder</a>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#searchAgain">Search Again</a></li>
+                    <li class="nav-item"><a class="nav-link" href="newrelease.html">New-releases</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <header class="masthead" style="background-image: url('header-bg.jpg');"><!-- Start: Bold BS4 CSS Image Slider -->
         <div id="searchInfo" class="panel-group">
 
@@ -190,26 +193,27 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form id="contactForm" name="contactForm">
+                    <form method="POST" data-netlify="true" id="contactForm" name="contact" onsubmit="submit">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group mb-3"><input class="form-control" type="text" id="name"
-                                        placeholder="Your Name *" required=""><small
+                                        placeholder="Your Name *" name="name" required=""><small
                                         class="form-text text-danger flex-grow-1 lead"></small></div>
                                 <div class="form-group mb-3"><input class="form-control" type="email" id="email"
-                                        placeholder="Your Email *" required=""><small
+                                        name="email" placeholder="Your Email *" required=""><small
                                         class="form-text text-danger lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="tel"
+                                <div class="form-group mb-3"><input class="form-control" type="tel" name="phone"
                                         placeholder="Your Phone *" required=""><small
                                         class="form-text text-danger lead"></small></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><textarea class="form-control" id="message"
+                                <div class="form-group mb-3"><textarea class="form-control" name="message" id="message"
                                         placeholder="Your Message *" required=""></textarea><small
                                         class="form-text text-danger lead"></small></div>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-lg-12 text-center">
+
                                 <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase"
                                     id="sendMessageButton" type="submit">Send Message</button>
                             </div>
@@ -222,7 +226,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2023</span></div>
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand <span id='date-time'></span></span>
+                </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item"><a href="https://github.com/CIMSGit"><i
@@ -234,190 +239,31 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li class="list-inline-item"><a href="#">MIT LICENSE</a></li>
+                    <ul id="MIT" class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="https://opensource.org/licenses/MIT"><img
+                                    src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"
+                                    style="height: 20px; width: 85px;">
+                            </a>
+                        </li>
                         <li class="list-inline-item"></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img
-                                    class="img-fluid d-block mx-auto"
-                                    src="assets/img/portfolio/1-full.jpg?h=5dd7d2e943b04419fd49b39ac9311e2d">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i
-                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img
-                                    class="img-fluid d-block mx-auto"
-                                    src="assets/img/portfolio/2-full.jpg?h=8487e77cde92f4bcc127db1b8ed0c4c1">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i
-                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img
-                                    class="img-fluid d-block mx-auto"
-                                    src="assets/img/portfolio/3-full.jpg?h=0eaf4d52e6cf4453f60193427500852f">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i
-                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal4">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img
-                                    class="img-fluid d-block mx-auto"
-                                    src="assets/img/portfolio/4-full.jpg?h=721f69d0590c03962b69f832824a646b">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i
-                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal5">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img
-                                    class="img-fluid d-block mx-auto"
-                                    src="assets/img/portfolio/5-full.jpg?h=789d8002c11f19a550179c6c003234ad">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i
-                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal6">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img
-                                    class="img-fluid d-block mx-auto"
-                                    src="assets/img/portfolio/6-full.jpg?h=f423a081dafbc490942c47688d79210f">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i
-                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+    <script>
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML = dt.getFullYear();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/agency.js?h=acf54d2ff1689ddc6ead1711be64020a"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
-    <script <script <script
-        src="assets/js/Ludens---1-Dark-mode-Index-Table-with-Search-Filters-Ludens---1-Index-Table-with-Search--Sort-Filters-v20.js?h=0b5112c06ff3094624f33df374e70be1"></script>
-    <script
-        src="assets/js/Ludens---1-Dark-mode-Index-Table-with-Search-Filters-main.js?h=131d9d7c45983fd045722a6686c99bb0"></script>
-</body>
 
 </html>

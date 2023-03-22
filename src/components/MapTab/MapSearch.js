@@ -175,7 +175,7 @@ export default function GeoLoc() {
         </button>
       </a>
       <div>
-        <div>
+        <div className='renderedCinema'>
 
           {isLoading2 ? (
             <p>Loading cinemas... at {long} </p>
@@ -204,15 +204,18 @@ export default function GeoLoc() {
 
 
         </div>
+      </div>
 
 
 
-        <div> <a className="search btn btn-primary  text-uppercase">
 
-          <button placeholder="Cinema..." className="btn btn-primary" onClick={handleClick}>
-            Find my closest Cinema!
-          </button>
-        </a></div>
+      <div> <a className="search btn btn-primary  text-uppercase">
+
+        <button placeholder="Cinema..." className="btn btn-primary" onClick={handleClick}>
+          Find my closest Cinema!
+        </button>
+      </a></div>
+      <div className='renderedCinema'>
         {isLoading ? (
           <p>Loading cinemas... at {longitude} </p>
         ) : (
@@ -236,8 +239,12 @@ export default function GeoLoc() {
             )}
 
           </div>
+
         )}
       </div>
     </div>
+
+
+
   );
 }
