@@ -177,7 +177,7 @@ export default function GeoLoc() {
                       <h3>{cinema.cinema_name}</h3>
                       <p>Address: {cinema.address}</p>
                       <p>Distance: {cinema.distance}</p>
-                      <img className="logo" src={cinema.logo_url} alt="Cinema Logo" />
+                      <a href={`https://www.google.com/search?q=${cinema.cinema_name}`}><img className="logo" src={cinema.logo_url} alt="Cinema Logo" /></a>
                     </li>
                   ))}
                 </ul>
