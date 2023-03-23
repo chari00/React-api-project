@@ -13,7 +13,7 @@
 
 ## Description
 This project was created mainly with React.js framework. This
-App help the user to find movie information and to easily locate nearby Cinemas and   
+App help the user to find movie information and to easily locate the nearest Cinemas to their current location.
 
 ## Installation 
 1. The software package needed to install are the following:
@@ -39,7 +39,12 @@ App help the user to find movie information and to easily locate nearby Cinemas 
 - **CSS** is a computer language for laying out and structuring web pages.
 
 ## Usage
-Click [DEMO VIDEO](https://user-images.githubusercontent.com/116744496/227040376-359a23cc-7280-4857-a70d-e9a1bcbb825f.mp4) to see how to use the app.
+#### Below is a Short video clip showing how to use the app.
+
+
+https://user-images.githubusercontent.com/116744496/227285898-f3d6493e-b211-40c7-a8c5-396310202557.mp4
+
+
 
 ## Visual
 #### Image of the App when finding the closest Cinema.
